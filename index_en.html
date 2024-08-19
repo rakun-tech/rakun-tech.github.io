@@ -4,23 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rakun Teknoloji</title>
+    <title>Rakun Technologhy</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="font-sans bg-gray-100">
 
-    <nav class="bg-gray-800 text-white p-4 text-right">
-        <a href="#experiences" class="mx-4 hover:text-gray-400">Deneyimler</a>
-        <a href="#services" class="mx-4 hover:text-gray-400">Hizmetler</a>
-        <a href="#projects" class="mx-4 hover:text-gray-400">Projeler</a>
-        <a href="#contact" class="mx-4 hover:text-gray-400">İletişim</a>
+    <nav class="bg-gray-800 text-white p-4 flex justify-end items-center">
+        <a href="#experiences" class="mx-4 hover:text-gray-400">Experiences</a>
+        <a href="#services" class="mx-4 hover:text-gray-400">Services</a>
+        <a href="#projects" class="mx-4 hover:text-gray-400">Projects</a>
+        <a href="#contact" class="mx-4 hover:text-gray-400">Contact</a>
+        <div class="relative">
+            <select id="language-select" class="bg-gray-700 text-white p-2 rounded">
+                <option value="tr">Türkçe</option>
+                <option value="en" selected>English</option>
+            </select>
+        </div>
     </nav>
 
     <section class="h-screen bg-blue-400 bg-cover bg-center flex items-center justify-center text-white">
         <div class="bg-blue-200 w-1/2 bg-opacity-50 p-8 rounded-lg text-center">
             <h1 class="text-5xl font-bold">Rakun Teknoloji</h1>
-            <p class="text-2xl mt-4">Yazılımda en hızlı ve efektif çözümler</p>
+            <p class="text-2xl mt-4">Fast and effective solution in software development.</p>
             <p class="text-xl mt-2">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -33,25 +39,25 @@
     </section>
 
     <section id="experiences" class="py-20 bg-white text-center">
-        <h2 class="text-3xl font-bold">Deneyimlerimiz</h2>
-        <p class="mt-4 text-lg">Deneyimler hakkında...</p>
+        <h2 class="text-3xl font-bold">Experiences</h2>
+        <p class="mt-4 text-lg">About experiences...</p>
     </section>
 
     <section id="services" class="py-20 bg-gray-100 text-center">
-        <h2 class="text-3xl font-bold">Hizmetlerimiz</h2>
-        <p class="mt-4 text-lg">Hizmetler hakkında...</p>
+        <h2 class="text-3xl font-bold">Our Services</h2>
+        <p class="mt-4 text-lg">About our services...</p>
     </section>
 
-    <section id="how-we-work" class="py-20 bg-white text-center">
-        <h2 class="text-3xl font-bold">Projeler & Portföy</h2>
-        <p class="mt-4 text-lg">Metin...</p>
+    <section id="projects" class="py-20 bg-white text-center">
+        <h2 class="text-3xl font-bold">Projects</h2>
+        <p class="mt-4 text-lg">Text...</p>
     </section>
 
-    <section id="projects" class="py-20 bg-gray-100 text-center">
+    <section id="contact" class="py-20 bg-gray-100 text-center">
 
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-                Bize Ulaşın</h2>
+                Contact</h2>
             <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -68,23 +74,24 @@
                         placeholder="email" required>
                 </div>
                 <div>
-                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 ">Konu</label>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 ">Subject</label>
                     <input type="text" id="subject"
                         class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
-                        placeholder="Konu" required>
+                        placeholder="Subject" required>
                 </div>
                 <div class="sm:col-span-2">
-                    <label for="message"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Mesajınız</label>
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your
+                        message</label>
                     <textarea id="message" rows="6"
                         class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
-                        placeholder="Yorum yazınız..."></textarea>
+                        placeholder="Your message..."></textarea>
                 </div>
                 <button type="submit"
-                    class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300">Gönder</button>
+                    class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300">Send</button>
             </form>
         </div>
     </section>
+    <script src="language-switcher.js"></script>
 
 </body>
 
