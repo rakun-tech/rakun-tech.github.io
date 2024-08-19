@@ -11,10 +11,10 @@
 <body class="font-sans bg-gray-100">
 
     <nav class="bg-gray-800 text-white p-4 flex justify-end items-center">
-        <a href="#experiences" class="mx-4 hover:text-gray-400">Deneyimler</a>
-        <a href="#services" class="mx-4 hover:text-gray-400">Hizmetler</a>
-        <a href="#projects" class="mx-4 hover:text-gray-400">Projeler</a>
-        <a href="#contact" class="mx-4 hover:text-gray-400">İletişim</a>
+        <a id="experiences" href="#experiences" class="mx-4 hover:text-gray-400">Deneyimler</a>
+        <a id="services" href="#services" class="mx-4 hover:text-gray-400">Hizmetler</a>
+        <a id="projects" href="#projects" class="mx-4 hover:text-gray-400">Projeler</a>
+        <a id="contact" href="#contact" class="mx-4 hover:text-gray-400">İletişim</a>
         <div class="relative">
             <select id="language-select" class="bg-gray-700 text-white p-2 rounded">
                 <option value="tr" selected>Türkçe</option>
@@ -25,46 +25,35 @@
 
     <section class="h-screen bg-blue-400 bg-cover bg-center flex items-center justify-center text-white">
         <div class="bg-blue-200 w-1/2 bg-opacity-50 p-8 rounded-lg text-center">
-            <h1 class="text-5xl font-bold">Rakun Teknoloji</h1>
-            <p class="text-2xl mt-4">Yazılımda en hızlı ve efektif çözümler</p>
-            <p class="text-xl mt-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.
+            <h1 id="header" class="text-5xl font-bold">Rakun Teknoloji</h1>
+            <p id="slogan" class="text-2xl mt-4">Yazılımda en hızlı ve efektif çözümler</p>
+            <p id="introduction" class="text-xl mt-2">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry...
             </p>
         </div>
     </section>
 
-    <section id="experiences" class="py-20 bg-white text-center">
+    <section id="experiences-section" class="py-20 bg-white text-center">
         <h2 class="text-3xl font-bold">Deneyimlerimiz</h2>
         <p class="mt-4 text-lg">Deneyimler hakkında...</p>
     </section>
 
-    <section id="services" class="py-20 bg-gray-100 text-center">
+    <section id="services-section" class="py-20 bg-gray-100 text-center">
         <h2 class="text-3xl font-bold">Hizmetlerimiz</h2>
         <p class="mt-4 text-lg">Hizmetler hakkında...</p>
     </section>
 
-    <section id="projects" class="py-20 bg-white text-center">
+    <section id="projects-section" class="py-20 bg-white text-center">
         <h2 class="text-3xl font-bold">Projeler & Portföy</h2>
         <p class="mt-4 text-lg">Metin...</p>
     </section>
 
-    <section id="contact" class="py-20 bg-gray-100 text-center">
-
+    <section id="contact-section" class="py-20 bg-gray-100 text-center">
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
                 Bize Ulaşın</h2>
             <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry...
             </p>
             <form action="#" class="space-y-8">
                 <div>
@@ -91,8 +80,8 @@
             </form>
         </div>
     </section>
-    <script src="language-switcher.js"></script>
 
+    <script src="language-switcher.js"></script>
 </body>
 
 </html>
