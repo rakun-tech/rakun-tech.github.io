@@ -119,7 +119,7 @@ export default function Home() {
         className="flex items-center justify-between px-8 py-24 max-w-7xl mx-auto mt-16 scroll-mt-16"
       >
         <div className="max-w-xl">
-          <h1 className="text-4xl font-bold mb-4">Do you have a dream?</h1>
+          <h1 className="text-4xl font-bold mb-4">Do you have a business idea?</h1>
           <p className="text-lg text-gray-700">
             Turn your vision into reality with our MVP development service. We
             help entrepreneurs and innovators transform their business ideas
